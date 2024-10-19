@@ -1,20 +1,42 @@
 <!DOCTYPE html>
 <html lang="en-US">
-	<head>
-		<meta charset="UTF-8"/>
-		<meta name="viewport" content ="width=device_width, initial-scale=1.0"/>
-		<title>Test Project | This is a test project</title>
-		<link rel="stylesheet" type="text/css" href="./css/main.css"/>
-	</head>
-	<body>
-		<nav class="menu-container">
-			<div class="page-logo">Page</div>
-			<ul>
-				<li><a href="#start">start</a></li>
-				<li><a href="#about">about me</a></li>
-				<li><a href="#works">example works</a></li>
-				<li><a href="#contact">contact</a></li>
-			</ul>
-		</nav>
-	</body>
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device_width, initial-scale=1.0" />
+	<title>Test Project | This is a test project</title>
+	<link rel="stylesheet" type="text/css" href="./css/main.css" />
+	<script src="./js/main.js" defer></script>
+
+</head>
+
+<body>
+	<div class="loading-page" id="loading-page">
+		<h2>loading page</h2>
+		<img src="./assets/img/loading-anim.gif" alt="Loading page animation">
+	</div>
+	<nav class="menu-container">
+		<div class="page-logo">Page</div>
+		<ul>
+			<li><a href="#start">start</a></li>
+			<li><a href="#about">about me</a></li>
+			<li><a href="#works">example works</a></li>
+			<li><a href="#contact">contact</a></li>
+		</ul>
+	</nav>
+	<main class="main">
+		<section id="start" class="start">
+			<h1>Welcome ^^</h1>
+			<div class="content">Welcome to my page! I'm a small web dev and music artist from Poland! I hope to meet
+				some amazing people throughout my life!</div>
+			<div class="pf-img-wrap">
+				<img src="./assets/img/profile.jpg" alt="Profile image of me" class="pf-img">
+			</div>
+		</section>
+
+	</main>
+
+	<script src="./js/loading.js"></script>
+</body>
+
 </html>
