@@ -3,6 +3,8 @@
 	--main-col: rgba(235, 235, 235, 1);
 	--menu-bg: rgba(0, 0, 0, 0.5);
 	--menu-hover: rgba(0, 0, 0, 1);
+	--link-bg: rgba(255, 255, 255, 0.25);
+	--link-col: rgba(0, 0, 0, 1);
 }
 
 * {
@@ -19,6 +21,29 @@ body {
 	display: grid;
 	grid-template: auto 1fr / 1fr;
 	color: var(--main-col);
+}
+
+.link {
+	font-size: 0.8rem;
+	padding: 2px 5px;
+	background-color: var(--link-bg);
+	color: var(--link-col);
+	text-decoration: none;
+	border-radius: 100vmin;
+	position: relative;
+}
+
+.link-img {
+
+	display: inline-block;
+	position: relative;
+	fill: #000000;
+	width: 0.6rem;
+	height: 0.6rem;
+	top: 0;
+	bottom: 0;
+	margin-right: 5px;
+	font-weight: bold;
 }
 
 .loading-page {
@@ -133,12 +158,15 @@ body {
 	grid-template: repeat(2, auto)/ 75% 25%;
 }
 
-.start h1 {
+.start .header-text {
 	grid-area: 1/1/2/2;
+	animation: text-slide-in 1s forwards ease-in-out;
+}
+
+.header-text {
 	font-size: 4rem;
 	transform: translateY(200%);
 	opacity: 0;
-	animation: welcome-text 1s forwards ease-in-out;
 }
 
 .start .content {
@@ -148,7 +176,7 @@ body {
 	transform: translateY(200%);
 	opacity: 0;
 	letter-spacing: 5px;
-	animation: welcome-text 1s 1s forwards ease-in-out
+	animation: text-slide-in 1s 1s forwards ease-in-out
 }
 
 .pf-img-wrap {
@@ -162,10 +190,30 @@ body {
 	border-radius: 100%;
 	transform: translateY(200%);
 	opacity: 0;
-	animation: welcome-text 1s 2s forwards ease-in-out
+	animation: text-slide-in 1s 2s forwards ease-in-out
 }
 
-@keyframes welcome-text {
+.about {
+	margin: 4rem 0;
+	width: 100%;
+	display: grid;
+	grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+}
+
+.about .header-text {
+	grid-area: 1/1/2/3;
+	animation: text-slide-in 1s 5s forwards ease-in-out;
+	text-align: center;
+	padding: 2rem 0;
+}
+
+.about .first {
+	grid-area: 2/1/3/2;
+	text-align: justify;
+}
+
+
+@keyframes text-slide-in {
 	0% {
 		transform: translateY(200%);
 		opacity: 0;
