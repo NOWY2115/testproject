@@ -6,7 +6,7 @@
 	--link-bg: rgba(255, 255, 255, 0.25);
 	--link-col: rgba(0, 0, 0, 1);
 
-	--footer-bg: linear-gradient(180deg, rgba(20,20,20,1), rgba(20,20,20,1), rgba(0,0,0,1));
+	--footer-bg: linear-gradient(180deg, rgba(20, 20, 20, 1), rgba(20, 20, 20, 1), rgba(0, 0, 0, 1));
 }
 
 * {
@@ -17,7 +17,7 @@
 	font-size: 16pt;
 }
 
-html{
+html {
 	scroll-behavior: smooth;
 }
 
@@ -65,7 +65,7 @@ body {
 	background-color: rgba(20, 20, 20, 1);
 	z-index: 999;
 	transition-duration: 250ms;
-	animation: hide-loader 5000ms forwards;
+	animation: hide-loader 2000ms forwards;
 }
 
 .loading-page h2 {
@@ -178,7 +178,7 @@ body {
 	opacity: 0;
 }
 
-.start{
+.start {
 	margin: 2rem 0;
 }
 
@@ -230,7 +230,7 @@ body {
 	padding: 0 1rem;
 }
 
-.footer{
+.footer {
 	grid-area: 3/1/4/2;
 	padding: 4rem;
 	background-image: var(--footer-bg);
