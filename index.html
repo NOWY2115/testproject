@@ -16,12 +16,20 @@
 		<img src="./assets/img/loading-anim.gif" alt="Loading page animation">
 	</div>
 	<nav class="menu-container">
-		<input type="checkbox" name="" id="menu-checkbox" class="visually-hidden">
+		<div class="theme-changer">
+			<input type="checkbox" name="theme-checkbox" id="theme-checkbox" class="visually-hidden">
+			<label for="theme-checkbox" class="theme-toggle">
+				<div class="theme-toggle-circle"></div>
+			</label>
+		</div>
+		<input type="checkbox" name="menu-checkbox" id="menu-checkbox" class="visually-hidden">
 		<label for="menu-checkbox" class="menu-toggle-wrapper">
 			<div class="menu-toggle"></div>
 		</label>
-		
-		<div class="page-logo">Page</div>
+
+		<div class="page-logo">
+			<p>Page</p>
+		</div>
 		<ul class="menu-list">
 			<li><a href="#start">start</a></li>
 			<li><a href="#about">about me</a></li>
@@ -32,22 +40,26 @@
 	<main class="main">
 		<section id="start" class="start">
 			<h1 class="header-text">Welcome ^^</h1>
-			<div class="content">Welcome to my page! I'm a small web dev and music artist from Poland! I hope to meet
+			<div class="content">Welcome to my webpage! I'm a small web dev and music artist from Poland! I hope to meet
 				some amazing people throughout my life!</div>
 			<div class="pf-img-wrap">
 				<img src="./assets/img/profile.jpg" alt="Profile image of me" class="pf-img">
 			</div>
 		</section>
-		<section id="about" class="about">
+		<section id="about" class="about alt-bg">
 			<h1 class="header-text">A little about me section :3</h1>
 			<article class="first">My name is Paul, but I work under the artist name 'NOWY'. I'm an 18-year-old guy from
 				Poland. I took up a passion for music at the age of 14 and a hobby for coding a year later. Right now
 				I'm
-				putting out my tracks at <a class="link" href="https://push.fm/fl/nowy" target="_blank">these services</a> and I
+				putting out my tracks at <a class="link" href="https://push.fm/fl/nowy" target="_blank">these
+					services</a> and I
 				occasionally code. All public results can be seen <a class="link" href="https://github.com/NOWY2115"
 					class="link" target="_blank">here</a>.
 			</article>
 			<article class="second"></article>
+		</section>
+		<section>
+			<h1 class="header-text">Well, maybe a bit more.</h1>
 		</section>
 
 	</main>
