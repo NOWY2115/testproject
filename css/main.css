@@ -520,6 +520,10 @@ section {
 		transition-delay: 0ms !important;
 	}
 
+	.about {
+		grid-template: auto auto / 2fr 2fr;
+	}
+
 
 }
 
