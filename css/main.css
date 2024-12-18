@@ -38,7 +38,7 @@ body {
 	position: relative;
 }
 
-h2{
+h2 {
 	font-size: 1.4rem;
 	margin: 15px 0;
 	animation: text-breath 3s ease-in-out infinite;
@@ -334,7 +334,7 @@ p {
 	display: flex;
 	flex-direction: column;
 	justify-content: flex-start;
-	align-items: center;
+	align-items: stretch;
 	position: relative;
 
 }
@@ -342,6 +342,7 @@ p {
 section {
 	padding: 1rem;
 	position: relative;
+	font-size: 0.5rem;
 }
 
 .alt-bg {
@@ -363,11 +364,11 @@ section {
 	z-index: -1;
 }
 
-.long-text{
+.long-text {
 	margin: 0 7rem;
 }
 
-.long-text p{
+.long-text p {
 	text-align: justify;
 }
 
@@ -460,7 +461,7 @@ section {
 @media screen and (min-width: 769px) {
 	section {
 		padding: 3rem;
-
+		font-size: 1rem;
 	}
 
 	.header-text {
@@ -504,18 +505,18 @@ section {
 	.menu-toggle-wrapper {
 		display: none;
 	}
-	
-	.menu-container{
+
+	.menu-container {
 		background-color: transparent;
 		transition-duration: 300ms;
 	}
 
-	.sticky-menu.menu-container{
+	.sticky-menu.menu-container {
 		background-color: var(--menu-bg);
 		transition-duration: 300ms;
 	}
 
-	.sticky-menu .page-logo{
+	.sticky-menu .page-logo {
 		background-color: transparent;
 	}
 
@@ -560,6 +561,11 @@ section {
 		grid-template: auto auto / 2fr 2fr;
 	}
 
+	article {
+		font-size: 1.3rem;
+		margin: 30px 0;
+	}
+
 
 }
 
@@ -572,6 +578,10 @@ section {
 	background: transparent !important;
 	opacity: 0 !important;
 	grid-area: none !important;
+}
+
+.text-center {
+	text-align: center !important;
 }
 
 @keyframes darkTheme {
@@ -637,17 +647,19 @@ section {
 }
 
 @keyframes text-breath {
-	0%{
+	0% {
 
 		transform: scale(1);
 	}
-	50%{
+
+	50% {
 		transform: scale(1.1) translateX(5%);
 	}
-	100%{
+
+	100% {
 		transform: scale(1);
 	}
-	
+
 }
 
 /* themes */
