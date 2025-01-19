@@ -537,12 +537,13 @@ td {
 
 }
 
-.zoom-image{
+.zoom-image {
 	border-radius: 0 !important;
 	cursor: zoom-in;
+	max-width: calc(50dvw - 30rem) !important;
 }
 
-.zoomed-parent{
+.zoomed-parent {
 	height: 100dvh;
 	position: fixed;
 	top: 0;
@@ -556,13 +557,13 @@ td {
 	padding: 1rem;
 }
 
-.zoomed-image{
+.zoomed-image {
 	max-height: 95dvh;
 	width: auto;
 	image-rendering: auto;
 }
 
-.zoomout-btn{
+.zoomout-btn {
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -582,9 +583,15 @@ td {
 	transition-duration: 250ms;
 }
 
-.zoomout-btn:hover{
+.zoomout-btn:hover {
 	background-color: rgba(200, 200, 200, 0.5);
 	color: #000;
+}
+
+.zoom-gallery tr {
+	display: flex !important;
+	grid-template: none !important;
+	padding: 5px;
 }
 
 /* media queries */
